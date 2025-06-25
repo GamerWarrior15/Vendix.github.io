@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact - Mon Site Professionnel</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="index.html" class="logo">MonSite</a>
+            <ul class="nav-links">
+                <li><a href="index.html">Accueil</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="about.html">À Propos</a></li>
+                <li><a href="contact.html" class="active">Contact</a></li>
+            </ul>
+            <div class="burger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+    <main>
+        <section style="padding: 8rem 0 6rem; background: white;">
+            <div class="container">
+                <h1 style="text-align: center; color: #2c3e50; margin-bottom: 3rem; font-size: 3rem;">Contactez-moi</h1>
+                <p style="text-align: center; font-size: 1.2rem; color: #7f8c8d; margin-bottom: 4rem; max-width: 600px; margin-left: auto; margin-right: auto;">
+                    Vous avez un projet en tête ? Une question ? N'hésitez pas à me contacter. Je vous répondrai dans les plus brefs délais.
+                </p>
+                
+                <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 4rem; max-width: 1200px; margin: 0 auto;">
+                    <!-- Informations de contact -->
+                    <div>
+                        <div class="contact-info">
+                            <h3 style="color: #3498db; margin-bottom: 2rem; font-size: 1.5rem;">Informations de Contact</h3>
+                            
+                            <div class="contact-item">
+                                <span style="margin-right: 1rem; font-size: 1.2rem;">📧</span>
+                                <div>
+                                    <strong>Email</strong><br>
+                                    <a href="mailto:contact@monsite.fr">contact@monsite.fr</a>
+                                </div>
+                            </div>
+                            
+                            <div class="contact-item">
+                                <span style="margin-right: 1rem; font-size: 1.2rem;">📱</span>
+                                <div>
+                                    <strong>Téléphone</strong><br>
+                                    <a href="tel:+33612345678">+33 6 12 34 56 78</a>
+                                </div>
+                            </div>
+                            
+                            <div class="contact-item">
+                                <span style="margin-right: 1rem; font-size: 1.2rem;">💬</span>
+                                <div>
+                                    <strong>WhatsApp</strong><br>
+                                    <a href="https://wa.me/33612345678" target="_blank">Discuter sur WhatsApp</a>
+                                </div>
+                            </div>
+                            
+                            <div class="contact-item">
+                                <span style="margin-right: 1rem; font-size: 1.2rem;">📍</span>
+                                <div>
+                                    <strong>Localisation</strong><br>
+                                    <span>Paris, France</span>
+                                </div>
+                            </div>
+                            
+                            <div class="contact-item">
+                                <span style="margin-right: 1rem; font-size: 1.2rem;">⏰</span>
+                                <div>
+                                    <strong>Disponibilité</strong><br>
+                                    <span>Lun - Ven : 9h00 - 18h00</span>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div style="background: #f8f9fa; padding: 2rem; border-radius: 20px; margin-top: 2rem;">
+                            <h4 style="color: #3498db; margin-bottom: 1rem;">Pourquoi me choisir ?</h4>
+                            <ul style="color: #555; line-height: 1.8;">
+                                <li>✅ Réponse garantie sous 24h</li>
+                                <li>✅ Devis gratuit et détaillé</li>
+                                <li>✅ Accompagnement personnalisé</li>
+                                <li>✅ Satisfaction client prioritaire</li>
+                            </ul>
+                        </div>
+                    </div>
+                    
+                    <!-- Formulaire de contact -->
+                    <div>
+                        <form id="contact-form" style="background: white; padding: 2.5rem; border-radius: 20px; box-shadow: 0 10px 30px rgba(0,0,0,0.1);">
+                            <h3 style="color: #2c3e50; margin-bottom: 2rem; text-align: center;">Envoyez-moi un message</h3>
+                            
+                            <div class="success-message" id="success-message">
+                                ✅ Votre message a été envoyé avec succès ! Je vous recontacterai dans les plus brefs délais.
+                            </div>
+                            
+                            <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 1rem;">
+                                <div class="form-group">
+                                    <label for="firstName">Prénom *</label>
+                                    <input type="text" id="firstName" name="firstName" required>
+                                </div>
+                                <div class="form-group">
+                                    <label for="lastName">Nom *</label>
+                                    <input type="text" id="lastName" name="lastName" required>
+                                </div>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="email">Email *</label>
+                                <input type="email" id="email" name="email" required>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="phone">Téléphone</label>
+                                <input type="tel" id="phone" name="phone" placeholder="+33 6 12 34 56 78">
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="company">Entreprise</label>
+                                <input type="text" id="company" name="company" placeholder="Optionnel">
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="service">Service souhaité</label>
+                                <select id="service" name="service" style="width: 100%; padding: 1rem; border: 2px solid #e0e0e0; border-radius: 10px; font-size: 1rem;">
+                                    <option value="">Sélectionnez un service</option>
+                                    <option value="consultation">Consultation Stratégique</option>
+                                    <option value="development">Développement Web</option>
+                                    <option value="mobile">Applications Mobiles</option>
+                                    <option value="formation">Formation & Coaching</option>
+                                    <option value="maintenance">Maintenance & Support</option>
+                                    <option value="audit">Audit & Optimisation</option>
+                                    <option value="autre">Autre</option>
+                                </select>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="budget">Budget approximatif</label>
+                                <select id="budget" name="budget" style="width: 100%; padding: 1rem; border: 2px solid #e0e0e0; border-radius: 10px; font-size: 1rem;">
+                                    <option value="">Sélectionnez votre budget</option>
+                                    <option value="moins-500">Moins de 500€</option>
+                                    <option value="500-1000">500€ - 1000€</option>
+                                    <option value="1000-3000">1000€ - 3000€</option>
+                                    <option value="3000-5000">3000€ - 5000€</option>
+                                    <option value="plus-5000">Plus de 5000€</option>
+                                </select>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="subject">Sujet *</label>
+                                <input type="text" id="subject" name="subject" required placeholder="Résumé de votre demande">
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="message
